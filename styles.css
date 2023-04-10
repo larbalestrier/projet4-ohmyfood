@@ -1,3 +1,235 @@
-h1 {
-    color: red;
+/****** General ***********/
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+body{
+    background: #f7f7f7;
+}
+
+.title-section {
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+img{
+    object-fit: cover;
+}
+/* header */ 
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+header   img {
+    width: 162px;
+    padding-top: 14px;
+   
+}
+.lien-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #ffffff;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+    padding-bottom: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    width: 100%;
+    gap: 17px;
+    padding: 15.5px 0px;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 39.5px;
+    padding-bottom: 57px;
+}
+
+.intro h1 {
+    width: 275px;
+    height: 68px;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    width: 315px;
+    padding-bottom: 27px;
+}
+
+.explorer{
+    color: white;
+    padding: 13px 18.75px;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 11%, rgba(255,121,218,1) 123%);
+    border-radius: 25px;
+    border: none; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);   
+}
+
+
+/* fonctionnement */
+.section-Fonctionnement{
+    background-color: white;
+    padding: 48px 20px 68px 20px;
+}
+
+.list-fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px;
+    padding-left: 12.51px;  
+    
+}
+
+.section-Fonctionnement h2 {
+    padding-bottom: 26px;
+}
+
+
+/* propriétés bouton fonctionnement */ 
+
+.button-fonctionnement {
+    
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    padding:28.59px 0px;
+    display: flex;
+    gap: 27px;
+    padding-left: 33.5px;
+    font-size: 16px;
+
+}
+
+.numero-list{
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #9356DC;
+    height: 24px;
+    width: 24px;
+    border-radius: 25px;
+}
+
+.grey-color{
+    color: #7E7E7E;
+}
+
+.purple-color{
+    color: #9356DC;
+}
+
+
+/* propriétés section restaurrants */ 
+
+.section-restaurants{
+    padding: 54px 18px 66px 17px;
+}
+
+.articles-restaurants{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 30px;
+}
+
+.card-restaurants{
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-restaurants img {
+    max-width: 100%;
+    height: 190px;
+    border-radius: 15px  15px 0px 0px;
+}
+
+.name-restaurants{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 16px;
+    padding-left: 13px;
+    padding-bottom: 15px;    
+}
+
+.info-restaurants{
+    font-size: 17px;
+    font-weight: 300;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+      
+}
+
+.logo-heart{
+    padding-right: 25px;
+}
+
+.logo-heart i {
+    font-size: 21px;
+}
+
+.new-restaurants {
+    color: #008766;
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width: 61px;
+    text-align: center;
+    padding: 7px 9px;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+}
+
+
+
+/* footer */ 
+
+footer {
+    background: #353535;
+    color: #ffffff;
+    padding: 22px 0px 22px 25px;
+}
+
+.title-footer{
+    font-family:'Shrikhand', cursive;
+    font-style: italic;  
+}
+
+.list-footer {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.logo-footer {
+    padding-right: 11px;
+    color: #ffffff;
 }
