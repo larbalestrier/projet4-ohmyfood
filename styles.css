@@ -6,6 +6,7 @@
 }
 body{
     background: #f7f7f7;
+    
 }
 
 .title-section {
@@ -25,7 +26,6 @@ header{
 }
 header   img {
     width: 162px;
-    padding-top: 14px;
    
 }
 .lien-logo{
@@ -34,7 +34,8 @@ header   img {
     width: 100%;
     background: #ffffff;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 nav{
@@ -44,6 +45,10 @@ nav{
     width: 100%;
     gap: 17px;
     padding: 15.5px 0px;
+}
+
+.localisation{
+    font-size: 16px;
 }
 
 /* intro */
@@ -71,6 +76,9 @@ nav{
 
 .explorer{
     color: white;
+    font-size: 16px;
+    width: 218px;
+    height: 50px;
     padding: 13px 18.75px;
     background: linear-gradient(0deg, rgba(147,86,220,1) 11%, rgba(255,121,218,1) 123%);
     border-radius: 25px;
@@ -162,6 +170,7 @@ nav{
     max-width: 100%;
     height: 190px;
     border-radius: 15px  15px 0px 0px;
+    object-position: 50% 60%;
 }
 
 .name-restaurants{
@@ -171,6 +180,10 @@ nav{
     padding-top: 16px;
     padding-left: 13px;
     padding-bottom: 15px;    
+}
+
+.title-content{
+    font-size: 18px;
 }
 
 .info-restaurants{
@@ -218,6 +231,8 @@ footer {
 .title-footer{
     font-family:'Shrikhand', cursive;
     font-style: italic;  
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .list-footer {
@@ -228,8 +243,142 @@ footer {
     flex-direction: column;
     gap: 7px;
 }
+.responsive-footer{
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-footer li {
+    font-size: 16px;
+}
 
 .logo-footer {
     padding-right: 11px;
     color: #ffffff;
+}
+
+
+
+
+/* media queries version desktop */ 
+
+@media (min-width:1024px) {
+    
+    /*propriétés logo */ 
+    .lien-logo{
+        padding-bottom: 31.8px;
+        padding-top: 30px;
+    }
+    header img {
+        width: 200px;
+    }
+
+    /*propriétés intro */ 
+    .intro h1 {
+        font-size: 40px;
+        width: 645px;
+        height: 47px;
+    }
+    .intro {
+        gap: 18px;
+        padding-top: 30px
+    }
+    
+    .subtitle{
+        width: 531px;
+        height: 46px;
+        line-height: 21px;
+        padding-bottom: 0px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    /* propriétés pour la section fonctionnement */
+    .list-fonctionnement{
+        flex-direction: row;
+    }
+
+    .button-fonctionnement{
+        position: relative;
+        width: 33%;
+    }
+    .numero-list{
+        left: -12px;
+    }
+
+    .section-Fonctionnement{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fonctionnement-content{
+        width: 1054px;
+        max-width: 1054px;
+    }
+
+    /* propriétés pour la section restaurant */ 
+
+    .articles-restaurants{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .section-restaurants{
+        display: flex;
+        justify-content: center;
+    }
+
+    .responsive-card{
+        max-width: 1080px;
+        width: 100%;
+    }
+
+
+
+    /*proprietes pour le footer */
+    footer{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 16px;
+        padding: 57px 26.42px 30px 0px;
+    }
+
+    .list-footer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0px;
+    }
+    .responsive-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+
+    .title-footer{
+        height: 27px;
+        width: 138px;
+    }
+
+    .size-article{
+        width: 661px;
+    }
+
+    .first-section{
+        width: 60%;
+    }
+
+    .second-section{
+        width: 40%;
+    }
+
+    .responsive-footer li {
+        width: 50%;
+    }
 }
