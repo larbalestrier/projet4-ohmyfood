@@ -1,0 +1,64 @@
+.section-Fonctionnement {
+    background-color:$background-content;
+    padding: 48px 20px 68px 20px;
+    @media (min-width: 1024px){
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        padding-bottom: 26px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0px;
+        padding-left: 12.51px;
+        @media (min-width: 1024px){
+            flex-direction: row;
+        }
+    }
+    .Fonctionnement__content{
+        @media (min-width: 1024px){
+            width: 1054px;
+            max-width: 1054px;
+        }
+    }  
+}
+
+
+/* prorietes bouton fonctionnement */
+.button-fonctionnement {
+    background-color: $color-background;
+    @include card-shadow;
+    border-radius: 25px;
+    padding: 28.59px 0px;
+    display: flex;
+    gap: 27px;
+    padding-left: 33.5px;
+    font-size: 16px;
+        @media (min-width: 1024px){
+            position: relative;
+            width: 33%;
+    }
+
+    
+    .numero-list{
+        position: absolute;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-text;
+        background: $color-primary;
+        height: 24px;
+        width: 24px;
+        border-radius: 25px;
+        @media (min-width: 1024px){
+            left: -12px;
+        }
+    }
+}
+

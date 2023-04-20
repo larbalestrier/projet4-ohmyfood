@@ -1,0 +1,75 @@
+footer {
+    background: $background-footer;
+    color:$color-text;
+    padding: 22px 0px 22px 25px;
+    @media (min-width: 1024px){
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 16px;
+        padding: 57px 26.42px 30px 0px;
+    }
+
+    .title-footer {
+        font-family: "Shrikhand", cursive;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        @media (min-width: 1024px){  
+            height: 27px;
+            width: 138px;
+        }
+    }
+
+    .list-footer {
+        list-style: none;
+        padding-left: 0px;
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            padding-top: 0px;
+        }
+        
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: $color-text;
+            @media (min-width: 1024px){                   
+                width: 50%;
+            }
+        }
+    }
+
+    .responsive-footer {
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    
+    .logo-footer {
+        padding-right: 11px;
+        color:$color-text;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .size-nav {
+         width: 661px;
+    }
+    .first-section {
+        width: 60%;
+    }
+    .second-section {
+        width: 40%;
+     }
+}

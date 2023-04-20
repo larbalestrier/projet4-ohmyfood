@@ -1,0 +1,38 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 39.5px;
+    padding-bottom: 57px;
+    @media (min-width: 1024px){
+        gap: 18px;
+        padding-top: 30px;
+    }
+
+    &__title{
+        width: 275px;
+        height: 68px;
+        @media (min-width: 1024px){
+            font-size: 40px;
+            width: 645px;
+            height: 47px;
+        }
+    }
+
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 300;
+        width: 315px;
+        padding-bottom: 27px;
+        @media (min-width: 1024px){  
+            width: 531px;
+            height: 46px;
+            line-height: 21px;
+            padding-bottom: 0px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}

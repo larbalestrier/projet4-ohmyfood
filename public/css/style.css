@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/****** General ***********/
+/* variables des couleurs */
 * {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -7,7 +7,11 @@
 }
 
 body {
-  background: #f7f7f7;
+  background: #F7F7F7;
+}
+
+img {
+  object-fit: cover;
 }
 
 .title-section {
@@ -15,67 +19,16 @@ body {
   font-weight: 700;
 }
 
-img {
-  object-fit: cover;
+.icone-color {
+  color: #7E7E7E;
 }
 
-/* header */
-header {
-  display: flex;
-  flex-direction: column;
+.icone-primary {
+  color: #9356DC;
 }
 
-header img {
-  width: 162px;
-}
-
-.lien-logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background: #ffffff;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #eaeaea;
-  width: 100%;
-  gap: 17px;
-  padding: 15.5px 0px;
-}
-
-.localisation {
-  font-size: 16px;
-}
-
-/* intro */
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 39.5px;
-  padding-bottom: 57px;
-}
-
-.intro h1 {
-  width: 275px;
-  height: 68px;
-}
-
-.subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  width: 315px;
-  padding-bottom: 27px;
-}
-
-.explorer {
-  color: white;
+.btn__explorer {
+  color: #FFFFFF;
   font-size: 16px;
   width: 218px;
   height: 50px;
@@ -86,27 +39,202 @@ nav {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* fonctionnement */
-.section-Fonctionnement {
-  background-color: white;
-  padding: 48px 20px 68px 20px;
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header img {
+  width: 162px;
+}
+@media (min-width: 1024px) {
+  .header img {
+    width: 200px;
+  }
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+@media (min-width: 1024px) {
+  .header__logo {
+    padding-bottom: 31.8px;
+    padding-top: 30px;
+  }
+}
+.header form {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  width: 100%;
+  gap: 17px;
+  padding: 15.5px 0px;
+}
+.header__localisation {
+  font-size: 16px;
 }
 
-.list-fonctionnement {
+footer {
+  background: #353535;
+  color: #FFFFFF;
+  padding: 22px 0px 22px 25px;
+}
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 16px;
+    padding: 57px 26.42px 30px 0px;
+  }
+}
+footer .title-footer {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  footer .title-footer {
+    height: 27px;
+    width: 138px;
+  }
+}
+footer .list-footer {
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (min-width: 1024px) {
+  footer .list-footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+}
+footer .list-footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (min-width: 1024px) {
+  footer .list-footer a {
+    width: 50%;
+  }
+}
+footer .responsive-footer {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  footer .responsive-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+footer .logo-footer {
+  padding-right: 11px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+  .size-nav {
+    width: 661px;
+  }
+  .first-section {
+    width: 60%;
+  }
+  .second-section {
+    width: 40%;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 39.5px;
+  padding-bottom: 57px;
+}
+@media (min-width: 1024px) {
+  .intro {
+    gap: 18px;
+    padding-top: 30px;
+  }
+}
+.intro__title {
+  width: 275px;
+  height: 68px;
+}
+@media (min-width: 1024px) {
+  .intro__title {
+    font-size: 40px;
+    width: 645px;
+    height: 47px;
+  }
+}
+.intro__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  width: 315px;
+  padding-bottom: 27px;
+}
+@media (min-width: 1024px) {
+  .intro__subtitle {
+    width: 531px;
+    height: 46px;
+    line-height: 21px;
+    padding-bottom: 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.section-Fonctionnement {
+  background-color: #FFFFFF;
+  padding: 48px 20px 68px 20px;
+}
+@media (min-width: 1024px) {
+  .section-Fonctionnement {
+    display: flex;
+    justify-content: center;
+  }
+}
+.section-Fonctionnement h2 {
+  padding-bottom: 26px;
+}
+.section-Fonctionnement__list {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 0px;
   padding-left: 12.51px;
 }
-
-.section-Fonctionnement h2 {
-  padding-bottom: 26px;
+@media (min-width: 1024px) {
+  .section-Fonctionnement__list {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .section-Fonctionnement .Fonctionnement__content {
+    width: 1054px;
+    max-width: 1054px;
+  }
 }
 
-/* propriétés bouton fonctionnement */
+/* prorietes bouton fonctionnement */
 .button-fonctionnement {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 25px;
   padding: 28.59px 0px;
@@ -115,72 +243,59 @@ nav {
   padding-left: 33.5px;
   font-size: 16px;
 }
-
-.numero-list {
+@media (min-width: 1024px) {
+  .button-fonctionnement {
+    position: relative;
+    width: 33%;
+  }
+}
+.button-fonctionnement .numero-list {
   position: absolute;
   left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #FFFFFF;
   background: #9356DC;
   height: 24px;
   width: 24px;
   border-radius: 25px;
 }
-
-.grey-color {
-  color: #7E7E7E;
+@media (min-width: 1024px) {
+  .button-fonctionnement .numero-list {
+    left: -12px;
+  }
 }
 
-.purple-color {
-  color: #9356DC;
-}
-
-/* propriétés section restaurrants */
-.section-restaurants {
+/* propriétés section restaurants */
+.restaurants {
   padding: 54px 18px 66px 17px;
 }
-
-.articles-restaurants {
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants__content {
+    max-width: 1080px;
+    width: 100%;
+  }
+}
+.restaurants__articles {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding-top: 30px;
 }
-
-.card-restaurants {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.card-restaurants img {
-  max-width: 100%;
-  height: 190px;
-  border-radius: 15px 15px 0px 0px;
-  object-position: 50% 60%;
-}
-
-.name-restaurants {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding-top: 16px;
-  padding-left: 13px;
-  padding-bottom: 15px;
-}
-
-.title-content {
-  font-size: 18px;
-}
-
-.info-restaurants {
-  font-size: 17px;
-  font-weight: 300;
+@media (min-width: 1024px) {
+  .restaurants__articles {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }
 
 .card-content {
@@ -188,13 +303,41 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo-heart {
+.card-content .name-restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-bottom: 15px;
+}
+.card-content .title-content {
+  font-size: 18px;
+}
+.card-content .info-restaurants {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card-content .logo-heart {
   padding-right: 25px;
 }
-
-.logo-heart i {
+.card-content .logo-heart i {
   font-size: 21px;
+}
+
+.restaurants__cards {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.restaurants__cards img {
+  max-width: 100%;
+  height: 190px;
+  border-radius: 15px 15px 0px 0px;
+  object-position: 50% 60%;
 }
 
 .new-restaurants {
@@ -208,144 +351,6 @@ nav {
   position: absolute;
   right: 12px;
   top: 13px;
-}
-
-/* footer */
-footer {
-  background: #353535;
-  color: #ffffff;
-  padding: 22px 0px 22px 25px;
-}
-
-.title-footer {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.list-footer {
-  list-style: none;
-  padding-left: 0px;
-  padding-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.responsive-footer {
-  gap: 7px;
-  display: flex;
-  flex-direction: column;
-}
-
-.list-footer li {
-  font-size: 16px;
-}
-
-.logo-footer {
-  padding-right: 11px;
-  color: #ffffff;
-}
-
-/* media queries version desktop */
-@media (min-width: 1024px) {
-  /*propriétés logo */
-  .lien-logo {
-    padding-bottom: 31.8px;
-    padding-top: 30px;
-  }
-  header img {
-    width: 200px;
-  }
-  /*propriétés intro */
-  .intro h1 {
-    font-size: 40px;
-    width: 645px;
-    height: 47px;
-  }
-  .intro {
-    gap: 18px;
-    padding-top: 30px;
-  }
-  .subtitle {
-    width: 531px;
-    height: 46px;
-    line-height: 21px;
-    padding-bottom: 0px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-  /* propriétés pour la section fonctionnement */
-  .list-fonctionnement {
-    flex-direction: row;
-  }
-  .button-fonctionnement {
-    position: relative;
-    width: 33%;
-  }
-  .numero-list {
-    left: -12px;
-  }
-  .section-Fonctionnement {
-    display: flex;
-    justify-content: center;
-  }
-  .fonctionnement-content {
-    width: 1054px;
-    max-width: 1054px;
-  }
-  /* propriétés pour la section restaurant */
-  .articles-restaurants {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-  .section-restaurants {
-    display: flex;
-    justify-content: center;
-  }
-  .responsive-card {
-    max-width: 1080px;
-    width: 100%;
-  }
-  /*proprietes pour le footer */
-  footer {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 16px;
-    padding: 57px 26.42px 30px 0px;
-  }
-  .list-footer {
-    display: flex;
-    flex-direction: row;
-    padding-top: 0px;
-  }
-  .responsive-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-  }
-  .title-footer {
-    height: 27px;
-    width: 138px;
-  }
-  .size-article {
-    width: 661px;
-  }
-  .first-section {
-    width: 60%;
-  }
-  .second-section {
-    width: 40%;
-  }
-  .responsive-footer li {
-    width: 50%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
