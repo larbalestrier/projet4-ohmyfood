@@ -27,16 +27,24 @@ img {
   color: #9356DC;
 }
 
-.btn__explorer {
+.btn {
   color: #FFFFFF;
   font-size: 16px;
-  width: 218px;
-  height: 50px;
-  padding: 13px 18.75px;
   background: linear-gradient(0deg, rgb(147, 86, 220) 11%, rgb(255, 121, 218) 123%);
   border-radius: 25px;
   border: none;
+  height: 50px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.btn__explorer {
+  width: 218px;
+  padding: 13px 18.75px;
+}
+.btn__commander {
+  width: 186px;
+  text-align: center;
+  padding: 13px;
 }
 
 .header {
@@ -56,7 +64,6 @@ img {
   justify-content: center;
   width: 100%;
   background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -65,6 +72,9 @@ img {
     padding-bottom: 31.8px;
     padding-top: 30px;
   }
+}
+.header__logo__shadows {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .header form {
   display: flex;
@@ -357,6 +367,11 @@ footer .logo-footer {
   top: 13px;
 }
 
+.body-pagemenu {
+  background-color: #FFFFFF;
+  margin-bottom: -30px;
+}
+
 .header__content {
   display: flex;
   align-items: center;
@@ -374,7 +389,7 @@ footer .logo-footer {
 }
 
 .img-plat {
-  max-height: 375px;
+  max-height: 275px;
   width: 100%;
   object-fit: cover;
 }
@@ -386,6 +401,15 @@ footer .logo-footer {
   top: -32px;
   padding: 32px 13px 0px 13px;
 }
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1055px;
+    margin: auto;
+  }
+}
 .menu__header {
   display: flex;
   justify-content: space-between;
@@ -395,6 +419,7 @@ footer .logo-footer {
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
+  padding-right: 24px;
 }
 .menu__btn {
   padding-right: 24px;
@@ -406,10 +431,19 @@ footer .logo-footer {
   font-size: 22px;
 }
 
+.card-title {
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
 .article-menu {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-top: 40px;
 }
 
 .card-article {
@@ -418,16 +452,35 @@ footer .logo-footer {
   padding: 12px 15px 12px 15px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .card-article {
+    width: 634px;
+  }
 }
 .card-article__name {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+.card-article__title {
+  font-size: 18px;
+}
+.card-article__subtitle {
+  font-size: 15px;
+  font-weight: 300;
+}
 .card-article__price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.content-commander {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

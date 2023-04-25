@@ -1,13 +1,20 @@
 .btn {
+    color:$color-text;
+    font-size: 16px;
+    background: linear-gradient(0deg, rgb(147, 86, 220) 11%, rgb(255, 121, 218) 123%);
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    @include btn-shadow;
+    cursor: pointer;
     &__explorer{
-        color:$color-text;
-        font-size: 16px;
         width: 218px;
-        height: 50px;
         padding: 13px 18.75px;
-        background: linear-gradient(0deg, rgb(147, 86, 220) 11%, rgb(255, 121, 218) 123%);
-        border-radius: 25px;
-        border: none;
-        @include btn-shadow;
     }
+    &__commander{
+        width: 186px;
+        text-align: center;
+        padding: 13px;
+    }
+    
 }

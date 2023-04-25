@@ -12,12 +12,15 @@
         justify-content: center;
         width: 100%;
         background: $background-content;
-        @include header-shadow;
+        
         padding-bottom: 15px;
         padding-top: 15px;
         @media (min-width: 1024px){
             padding-bottom: 31.8px;
             padding-top: 30px;
+        }
+        &__shadows{
+            @include header-shadow;
         }
     }
     form {
@@ -27,8 +30,8 @@
         width: 100%;
         gap: 17px;
         padding: 15.5px 0px;
-      }
+    }
       &__localisation{
         font-size: 16px;
-      }
-}
+    }
+ }
