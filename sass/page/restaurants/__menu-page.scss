@@ -3,26 +3,6 @@
     margin-bottom: -30px;
   }
 
-.header{
-    &__content {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: relative;
-    }
-    &__arrow {
-        position: absolute;
-        left: 23px;
-        color: $background-footer;
-        
-    }
-    &__arrow-style{
-        text-decoration: none;
-        color: #353535;
-    }
-
-}
-
 .img-plat {
     max-height: 275px;
     width: 100%;

@@ -12,17 +12,31 @@
         justify-content: center;
         width: 100%;
         background: $background-content;
-        
         padding-bottom: 15px;
         padding-top: 15px;
+        @include header-shadow;
+        position: relative;
         @media (min-width: 1024px){
             padding-bottom: 31.8px;
             padding-top: 30px;
-        }
-        &__shadows{
-            @include header-shadow;
-        }
+        }     
     }
+    &__arrow {
+        position: absolute;
+        left: 23px;
+        color: $background-footer;
+        
+    }
+    &__arrow-style{
+        text-decoration: none;
+        color: #353535;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+
+
     form {
         display: flex;
         justify-content: center;
@@ -33,5 +47,14 @@
     }
       &__localisation{
         font-size: 16px;
+        border: none;
+        background-color: #eaeaea;
     }
  }
+
+
+
+
+
+ 
+    

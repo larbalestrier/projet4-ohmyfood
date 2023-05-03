@@ -7,6 +7,11 @@
     height: 50px;
     @include btn-shadow;
     cursor: pointer;
+    transition-duration: .25s;
+    &:hover {
+        box-shadow: 0.25rem 0.25rem 20px rgba(0,0,0,.5);
+        opacity: 0.8;
+    }
     &__explorer{
         width: 218px;
         padding: 13px 18.75px;
@@ -16,5 +21,4 @@
         text-align: center;
         padding: 13px;
     }
-    
 }
