@@ -40,6 +40,7 @@
     form {
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #eaeaea;
         width: 100%;
         gap: 17px;
@@ -49,8 +50,11 @@
         font-size: 16px;
         border: none;
         background-color: #eaeaea;
+        width: 109px;
     }
- }
+}
+    
+ 
 
 
 
