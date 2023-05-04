@@ -56,9 +56,9 @@
         
         .logo-heart {
             padding-right: 25px;
-            
-          }
-          
+
+        }
+
         .logo-heart i {
             font-size: 21px;
           }
@@ -91,3 +91,25 @@
             top: 13px;
     }
 
+
+
+/* animation logo heart */ 
+   .logo-heart{
+    &__nobg{
+        position: absolute;
+        
+    }
+    &__bg{
+        position: relative;
+        background-clip: text;
+        -webkit-background-clip: 
+        text;color: transparent;
+        background-image: linear-gradient(0deg, rgb(147, 86, 220) 11%, rgb(255, 121, 218) 123%);
+        opacity: 0;
+        transition: all 0.2s;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.15);
+        }
+    }
+   }
