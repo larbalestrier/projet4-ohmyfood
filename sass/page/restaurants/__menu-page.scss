@@ -72,18 +72,25 @@
         justify-content: space-between;
         padding: 15px 12px;
         width: 100%;
+        overflow: hidden;
     }
     &__name{
         display: flex;
         flex-direction: column;
+        white-space: nowrap;
+        overflow: hidden;
         
     }
     &__title{
         font-size: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__subtitle{
         font-size: 15px;
         font-weight: 300;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__price {
         display: flex;
@@ -98,10 +105,17 @@
 }
 
 
-/* animation */ 
+/* animations */ 
 
+/* animations des plat */
 .card-article{
     overflow: hidden;
+    animation: apparaitre 1.5s cubic-bezier(.58,1.13,.82,.96) both;
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms * $i;
+        }  
+    }
     &__check{
         display: flex;
         background-color: $color-secondary;
@@ -132,5 +146,24 @@
     }
     
 }
+
+/* animations des menu */
+
+
+@keyframes apparaitre{
+    0%{
+        transform: scale(0);
+        transform-origin: 100% 50%;
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+
+
+
+
+
 
 
