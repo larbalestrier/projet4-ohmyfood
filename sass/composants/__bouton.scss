@@ -17,7 +17,11 @@
     }
     &__explorer{
         width: 218px;
-        padding: 13px 18.75px;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+
     }
     &__commander{
         width: 186px;

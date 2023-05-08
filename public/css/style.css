@@ -101,7 +101,10 @@ img {
 }
 .btn__explorer {
   width: 218px;
-  padding: 13px 18.75px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 .btn__commander {
   width: 186px;
