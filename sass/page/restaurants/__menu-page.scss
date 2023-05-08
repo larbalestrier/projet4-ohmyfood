@@ -118,13 +118,7 @@
 
 /* animations des plat */
 .card-article{
-    overflow: hidden;
-    animation: apparaitre 1.5s cubic-bezier(.58,1.13,.82,.96) both;
-    @for $i from 1 through 4 {
-        &:nth-child(#{$i}){
-            animation-delay: 100ms * $i;
-        }  
-    }
+    overflow: hidden;    
     &__check{
         display: flex;
         background-color: $color-secondary;
@@ -171,7 +165,18 @@
 }
 
 
-
+.delai-menu-1{
+    animation: apparaitre 1.5s cubic-bezier(.58,1.13,.82,.96) both;
+    animation-delay:0s ;
+}
+.delai-menu-2{
+    animation: apparaitre 1.5s cubic-bezier(.58,1.13,.82,.96) both;
+    animation-delay: 0.5s ;
+}
+.delai-menu-3{
+    animation: apparaitre 1.5s cubic-bezier(.58,1.13,.82,.96) both;
+    animation-delay:1s ;
+}
 
 
 
