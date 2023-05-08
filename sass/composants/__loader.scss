@@ -1,0 +1,59 @@
+/* loarder */ 
+.loader{
+    position: fixed;
+    background-color:#ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: desappear 0.1s 2.6s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+   
+    &__circle-1{
+      opacity: 1;
+      font-size: 60px;
+      animation: spin  1s   linear;
+      animation-iteration-count: 2;
+      color: $color-primary;
+    }
+    &__circle-2{
+      font-size: 60px;
+      animation: spin 1s 0.25s  linear ;
+      animation-iteration-count: 2;
+      color: $color-quaternary;
+    }
+    &__circle-3{
+      font-size: 60px;
+      animation: spin 1s 0.5s  linear;
+      animation-iteration-count: 2;
+      color: $color-secondary;
+      
+    }
+  }
+  
+  @keyframes desappear{
+    0%{
+      opacity: 0.9;
+    }
+   
+    100%{
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50%{
+      transform: translateY(0.5em) rotate(180deg);
+    }
+    
+    100%{
+      transform: translateY(0) rotate(360deg);
+    }  
+  }

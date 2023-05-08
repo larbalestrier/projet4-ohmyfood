@@ -29,58 +29,7 @@
 
 
 
-/* loarder */ 
-.loader{
-  position: fixed;
-  background-color:#ffffff;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.9;
-  animation: desappear 1s 2s forwards;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
- 
-  &__circle-1{
-    opacity: 1;
-    font-size: 60px;
-    animation: spin 1s infinite linear;
-    color: $color-primary;
-  }
-  &__circle-2{
-    font-size: 60px;
-    animation: spin 1s 0.2s infinite linear ;
-    color: $color-quaternary;
-  }
-  &__circle-3{
-    font-size: 60px;
-    animation: spin 1s 0.4s infinite linear;
-    color: $color-secondary;
-    
-  }
-}
 
-@keyframes desappear{
-  100%{
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50%{
-    transform: translateY(0.5em) rotate(180deg);
-  }
-  
-  100%{
-    transform: translateY(0) rotate(360deg);
-  }  
-}
   
 
 

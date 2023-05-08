@@ -35,7 +35,7 @@ img {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: desappear 1s 2s forwards;
+  animation: desappear 0.1s 2.6s forwards;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,21 +44,27 @@ img {
 .loader__circle-1 {
   opacity: 1;
   font-size: 60px;
-  animation: spin 1s infinite linear;
+  animation: spin 1s linear;
+  animation-iteration-count: 2;
   color: #9356DC;
 }
 .loader__circle-2 {
   font-size: 60px;
-  animation: spin 1s 0.2s infinite linear;
+  animation: spin 1s 0.25s linear;
+  animation-iteration-count: 2;
   color: #FF79DA;
 }
 .loader__circle-3 {
   font-size: 60px;
-  animation: spin 1s 0.4s infinite linear;
+  animation: spin 1s 0.5s linear;
+  animation-iteration-count: 2;
   color: #99E2D0;
 }
 
 @keyframes desappear {
+  0% {
+    opacity: 0.9;
+  }
   100% {
     opacity: 0;
     z-index: -1;
