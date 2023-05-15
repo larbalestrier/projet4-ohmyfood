@@ -23,10 +23,6 @@ img {
   color: #7E7E7E;
 }
 
-.icone-primary {
-  color: #9356DC;
-}
-
 /* loarder */
 .loader {
   position: fixed;
@@ -339,6 +335,9 @@ footer .logo-footer {
     position: relative;
     width: 33%;
   }
+}
+.button-fonctionnement:hover .icone-color {
+  color: #9356DC;
 }
 .button-fonctionnement .numero-list {
   position: absolute;

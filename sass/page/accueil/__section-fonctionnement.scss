@@ -29,6 +29,8 @@
 }
 
 
+
+
 /* prorietes bouton fonctionnement */
 .button-fonctionnement {
     background-color: $color-background;
@@ -43,6 +45,10 @@
             position: relative;
             width: 33%;
     }
+    &:hover .icone-color{
+        color: $color-primary;
+    }
+    
 
     
     .numero-list{
